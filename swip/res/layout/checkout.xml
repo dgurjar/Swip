@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:background="#202020"
+        android:baselineAligned="false" >
+
+        <ImageView
+            android:id="@+id/appImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/angrybirds2" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:text="Angry Birds"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+
+               <TableLayout
+        android:id="@+id/legendtable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:background="#FF191919">
+
+        <TableRow >
+            <ImageView
+                android:id="@+id/warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/warn20"
+                android:layout_marginLeft="20px" />
+
+            <TextView
+                android:id="@+id/definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:text="means risky"
+            />
+        </TableRow>
+        <TableRow >
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info20"
+                android:layout_marginLeft="20px" />
+
+            <TextView
+                android:id="@+id/definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:text="means reduced functionality"
+            />
+        </TableRow>
+            
+            
+    </TableLayout>      
+        
+    <View
+        android:layout_height="1dip"
+        android:layout_marginBottom="5dp"
+        android:background="#FF909090" />
+
+    <TableRow
+        android:id="@+id/buttons"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_span="2"
+            android:layout_weight="1" >
+
+            <TableLayout
+                android:id="@+id/permissionTable"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </TableLayout>
+        </ScrollView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <Button
+            android:id="@+id/modify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Modify" />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Accept and install" />
+    </TableRow>
+
+</TableLayout>

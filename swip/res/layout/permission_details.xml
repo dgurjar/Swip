@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#202020"
+        android:baselineAligned="false" >
+
+        <TextView
+            android:id="@+id/permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_span="2" />
+    </TableRow>
+
+        
+            <TableLayout
+        android:id="@+id/legendtable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:background="#FF191919">
+
+        <TableRow >
+            <ImageView
+                android:id="@+id/warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/warn20"
+                android:layout_marginLeft="20px" />
+
+            <TextView
+                android:id="@+id/definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:text="means risky"
+            />
+        </TableRow>
+        <TableRow >
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info20"
+                android:layout_marginLeft="20px" />
+
+            <TextView
+                android:id="@+id/definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:text="means reduced functionality"
+            />
+        </TableRow>
+            
+            
+    </TableLayout>    
+        
+    <View
+        android:layout_height="1dip"
+        android:layout_marginBottom="50dp"
+        android:background="#FF909090" />
+
+    <TableRow
+        android:id="@+id/privacyRisk"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:baselineAligned="false" >
+
+        <ImageView
+            android:id="@+id/privacyImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/warn40" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This request"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/risk"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="TThe application can access and possibly misuse sensitive information. This is because you are allowing access to certain permissions. Tap the modify button below and look for the risk icon to change this."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/featureLoss"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/info40" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The application says"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/explanation"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="Parts of the application may not work. This is because you are denying access to certain permissions. Tap the modify button below and look for the reduced functionality icon to change this."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1" >
+        
+        <Button
+            android:id="@+id/deny"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="Deny" />
+               <Button
+            android:id="@+id/grant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="Allow" />
+
+
+    </TableRow>
+</TableLayout>
